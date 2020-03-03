@@ -1,4 +1,5 @@
 var express = require('express');
+var port = process.env.PORT || 8000;
 var socket = require('socket.io');
 var app = express();
 const path = require('path');
@@ -16,6 +17,6 @@ app.get('/',function(req,res){
     res.render('home')
 });
 
-var server = app.listen(8000,function(){
+var server = app.listen(port,function(){
     console.log("server is listing on port:8000");
 });
