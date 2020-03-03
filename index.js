@@ -9,7 +9,7 @@ app.set ('views',path.join(__dirname, 'views'));
 app.use(express.static('assets'));
 const chatServer = require('http').Server(app);
 var chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
-chatServer.listen(process.env.PORT||5000);
+chatServer.listen(5000);
 console.log('chat server is listening on port 5000');
 
 
