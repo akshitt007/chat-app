@@ -1,7 +1,7 @@
-module.exports.chatSockets = function(socketServer){
+/*module.exports.chatSockets = function(socketServer){
     var io = require('socket.io')(socketServer);
 
-    io.sockets.on('connection', function(socket){
+    io.on('connection', function(socket){
         socket.on("chat",function(data){
             io.sockets.emit("chat",data);
 
@@ -15,4 +15,4 @@ module.exports.chatSockets = function(socketServer){
     });
        
     });
-}
+}*/
