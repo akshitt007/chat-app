@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8000"||"http://chat-app--007.herokuapp.com/");
+var socket = io.connect("http://localhost:8000"||"https://chat-app--007.herokuapp.com/");
 
 var username = document.getElementById("username");
 var message = document.getElementById("message");
