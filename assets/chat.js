@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:5000");
+var socket = io.connect("http://localhost:5000"||window.location.hostname);
 
 var username = document.getElementById("username");
 var message = document.getElementById("message");
